@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <main class="flex flex-row h-screen max-sm:flex-col"> 
+        <div class="bg-[#58AF9C] w-[40%] flex flex-col justify-center items-center text-white max-sm:w-screen max-sm:py-8 max-lg:gap-2">
+            <h2 class="capitalize text-[3rem] font-bold max-sm:text-3xl max-lg:text-3xl">welcome back!</h2>
+
+            <p class="text-[1.2rem] w-[20rem] text-center font-light mb-[1.5rem] max-sm:text-base max-lg:text-base max-lg:px-10 max-lg:mb-[0.7rem]">To keep connected width us please login with your personal info</p>
+
+            <a class="uppercase border-2 py-2 px-12 rounded-full 
+            hover:bg-white hover:text-[#58AF9C] max-sm:text-xs" href="#">sing in</a> <!-- btn Entrar -->
+        </div> <!-- Parte da Esquerda -->
+
+        
+        <div class="flex w-[60%] justify-center items-center flex-col gap-4 max-sm:w-screen max-sm:py-10"> 
+
+
+                <div class="flex flex-col items-center gap-4">
+                    <h1 class="capitalize text-[3rem] font-bold text-[#58AF9C] max-sm:text-3xl max-lg:text-3xl">create account</h1>
+                    <div class="flex flex-row justify-center gap-6">
+
+                        <div class="border-2 w-10 h-10 flex justify-center items-center rounded-full text-2xl p-6 text-gray-400 cursor-pointer hover:bg-[#58AF9C] hover:text-white hover:border-[#58AF9C] max-sm:text-xl max-sm:p-5 max-lg:text-xl max-lg:p-5">
+                             <i class="fa-brands fa-facebook-f"></i>
+                        </div> <!-- btn facebook -->
+
+                        <div class="border-2 w-10 h-10 flex justify-center items-center rounded-full text-2xl p-6 text-gray-400 cursor-pointer hover:bg-[#58AF9C] hover:text-white hover:border-[#58AF9C] max-sm:text-xl max-sm:p-5 max-lg:text-xl max-lg:p-5">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </div> <!-- btn google -->
+
+                        <div class="border-2 w-10 h-10 flex justify-center items-center rounded-full text-2xl p-6 text-gray-400 cursor-pointer hover:bg-[#58AF9C] hover:text-white hover:border-[#58AF9C] max-sm:text-xl max-sm:p-5 max-lg:text-xl max-lg:p-5">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div> <!-- btn linkedin -->
+                        
+                    </div>
+                    <p class="text-[1.2rem] text-gray-400 font-light max-lg:text-base">or use your email for registration:</p> <!-- Frase Sugestiva -->
+                </div> <!-- Acesso por Plataformas -->
+
+                <form action="" class="flex flex-col gap-2 py-4 items-center w-[30rem] max-sm:w-[23rem] max-lg:w-[21rem]">
+              
+                <div class="bg-gray-200 py-2 px-4 flex flex-row gap-3 text-[1.2rem] text-gray-700 items-center w-full max-lg:text-base">
+                    <label for="name">
+                        <i class="fa-regular fa-user text-gray-500"></i>
+                    </label>
+                    <input class="w-full p-2 outline-none" type="text" name="name" id="name" placeholder="Name">
+                </div> <!-- Caixa User -->
+
+                <div class="bg-gray-200 py-2 px-4 flex flex-row gap-3 text-[1.2rem] text-gray-700 items-center w-full max-lg:text-base">
+                    <label for="email">
+                        <i class="fa-regular fa-envelope text-gray-500"></i>
+                    </label>
+                    <input class="w-full p-2 outline-none" type="email" name="email" id="email" placeholder="Email">
+                </div> <!-- Caixa Email -->
+
+                <div class="bg-gray-200 py-2 px-4 flex flex-row gap-3 text-[1.2rem] text-gray-700 items-center w-full max-lg:text-base">
+                    <label for="password">
+                        <i class="fa-solid fa-lock text-gray-500"></i>
+                    </label>
+                    <input class="w-full p-2 outline-none" type="password" name="password" id="password" placeholder="Password">
+                </div> <!-- Caixa Senha -->
+
+                <button class="m-5 w-fit bg-[#58AF9C] border-[#58AF9C] border-2 rounded-full uppercase py-2 px-17 text-white outline-none hover:border-2 hover:border-[#58AF9C] hover:bg-white hover:text-[#58AF9C] hover:cursor-pointer max-sm:text-sm max-sm:px-15 max-lg:text-base" type="submit">sing up</button> <!-- btn Logar -->
+
+                </form> <!-- Formularios -->
+
+        </div> <!-- Parte da Direita Maior-->
+    </main>
+
+</body>
+</html>
